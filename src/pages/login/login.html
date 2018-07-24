@@ -7,7 +7,7 @@
 </ion-header>
 
 <ion-content padding>
-    <div class="logo" style="text-align: center">
+    <div class="logo" style="text-align: center;padding-top: 20%;">
         <img src="assets/imgs/logo.png" alt="Ionic logo" >
       </div>
   <ion-list>
@@ -29,11 +29,14 @@
     </ion-item>
 
   </ion-list>
+  <ion-grid>
   <ion-row responsive-sm>
-      <ion-col>
-          <button ion-button (click)="onLogin()" type="submit" bar color="primary">Login</button>
-          <button ion-button (click)="onSignup()" type="submit" bar color="primary">Register</button>
+          <ion-col>
+          <button ion-button (click)="onLogin()" type="submit" block color="primary">Login</button></ion-col>
+          <ion-col>
+          <button ion-button (click)="onSignup()" type="submit" block color="primary">Register</button>
         </ion-col>
         </ion-row>
+      </ion-grid>
 
 </ion-content>

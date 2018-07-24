@@ -1,7 +1,7 @@
-1- loader
-2- message toast
-3- checks for applying multiple property sametime by user
-4- checks for creating multiple user for same email id.
+1- loader done
+2- message toast done
+3- checks for applying multiple property sametime by user done
+4- checks for creating multiple user for same email id. done
 5- Check for once approved/rejects no multiple allowed.
 6- User genome profile available
 7- Photos, pics

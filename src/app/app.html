@@ -1,13 +1,18 @@
 <ion-menu [content]="content">
   <ion-header>
-    <ion-toolbar>
-      <ion-title> Rentome</ion-title>
+    <ion-toolbar color="primary">
+        <div class="logo" style="text-align: center">
+            <img src="assets/imgs/logo.png" alt="Ionic logo" style="max-height:5%;    max-width: 20%">
+            <ion-title> Rentome</ion-title>
+          </div>
+     
+   
     </ion-toolbar>
   </ion-header>
 
-  <ion-content>
-    <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+  <ion-content color="primary">
+    <ion-list >
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)"  color="primary">
         {{p.title}}
       </button>
     </ion-list>

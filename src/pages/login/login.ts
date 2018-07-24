@@ -69,7 +69,7 @@ this.loader.present();
       position: 'bottom'
     });
      this.toast.present();
-   
+    
    
      }else{
       this.toast = this.toastCtrl.create({
