@@ -1,0 +1,28 @@
+1- loader
+2- message toast
+3- checks for applying multiple property sametime by user
+4- checks for creating multiple user for same email id.
+5- Check for once approved/rejects no multiple allowed.
+6- User genome profile available
+7- Photos, pics
+
+
+import { LoadingController } from 'ionic-angular';
+,public loading: LoadingController
+ loader = this.loading.create({
+  content: 'Rentome Login Validating!',
+});
+
+this.loader.present();
+ this.loader.dismiss();
+
+
+ import { ToastController } from 'ionic-angular';
+ ,private toastCtrl: ToastController
+
+ toast = this.toastCtrl.create({
+    message: 'User was added successfully',
+    duration: 3000,
+    position: 'bottom'
+  });
+  this.toast.present();

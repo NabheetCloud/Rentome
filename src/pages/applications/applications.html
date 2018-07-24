@@ -1,0 +1,54 @@
+<ion-header>
+
+    <ion-navbar  color="primary">
+      <ion-title>Rent Out</ion-title>
+    
+          <div class="logo" style="text-align: right">
+          <img src="assets/imgs/logo.png" alt="Ionic logo" style="max-height:5%;    max-width: 20%">
+        </div>
+    </ion-navbar>
+   
+  
+  </ion-header>
+  
+<ion-content padding>
+    <ion-list>
+        <ion-item class="item item-text-wrap"  >
+       
+            <b style="color:#427feb">{{property.description}}</b>
+           
+             <div style="
+          font-weight: bold" class="item-note" item-end> {{property.location}}</div>
+            <br><br>
+             <p style="color: #1a4226;
+          font-weight: bold"> {{property.rent}}</p>
+       
+        
+        </ion-item>
+    </ion-list>
+    <ion-list>
+ 
+        <ion-item class="item item-text-wrap" *ngFor="let user of users"  >
+            <ion-row responsive-sm>
+            <b style="color:#427feb">Name - {{user.name}}</b>
+           </ion-row>
+           <ion-row responsive-sm>
+             <div style="
+          font-weight: bold"  > Email - {{user.email}}</div>
+          </ion-row>
+          <ion-row responsive-sm>
+            <br><br>
+             <p style="color: #1a4226;
+          font-weight: bold"> Rentome Score - {{user.score}}</p>
+          </ion-row>
+         
+              
+        
+          <button ion-button (click)="onApprove(user.id)" type="Approve" full color="primary">Approve</button>
+       
+            <button ion-button (click)="onReject(user.id)" type="Approve" full color="danger">Reject</button>
+         
+          </ion-item>
+      
+      </ion-list>
+</ion-content>

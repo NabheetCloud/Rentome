@@ -1,0 +1,71 @@
+<!--
+  Generated template for the RegistrationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Registration</ion-title>
+    <div class="logo" style="text-align: right">
+        <img src="assets/imgs/logo.png" alt="Ionic logo" style="max-height:5%;    max-width: 20%">
+      </div>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding   >
+    <div class="logo" style="text-align: center">
+        <img src="assets/imgs/logo.png" alt="Ionic logo" style="    max-width: 50%">
+      </div>
+  <form #loginForm="ngForm" novalidate   >
+    <ion-list no-lines    inset>
+      <ion-item   >
+      
+        <ion-input [(ngModel)]="register.name" name="name" type="text" #name="ngModel" 
+        spellcheck="false" autocapitalize="off"
+          required  placeholder="Name">
+        </ion-input>
+      </ion-item>
+      
+      <ion-item   >
+          
+            <ion-input [(ngModel)]="register.email" name="email" type="text" #email="ngModel" 
+            spellcheck="false" autocapitalize="off"
+              required  placeholder="Email" pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})">
+            </ion-input>
+          </ion-item>
+         
+      <ion-item   >
+      
+        <ion-input [(ngModel)]="register.password" name="password" type="password" #password="ngModel" placeholder="Password"required>
+        </ion-input>
+      </ion-item>
+      
+      <ion-item   >
+          
+            <ion-input [(ngModel)]="register.repeatPassword" name="password" type="password" 
+            #repeatPassword="ngModel" placeholder="Repeat Password"required>
+            </ion-input>
+          </ion-item>
+         <ion-item>
+  <ion-label>Test User</ion-label>
+  <ion-select [(ngModel)]="register.genomeuser" name="genomeuser">
+    <ion-option value="GENOMELINKTEST001">GENOMELINKTEST001</ion-option>
+    <ion-option value="GENOMELINKTEST002">GENOMELINKTEST002</ion-option>
+    <ion-option value="GENOMELINKTEST003">GENOMELINKTEST003</ion-option>
+    <ion-option value="GENOMELINKTEST004">GENOMELINKTEST004</ion-option>
+    <ion-option value="GENOMELINKTEST005">GENOMELINKTEST005</ion-option>
+  </ion-select>
+</ion-item>
+    </ion-list>
+
+    <ion-row responsive-sm>
+      <ion-col>
+        <button ion-button (click)="onSignup()" type="submit" full color="primary">Signup</button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

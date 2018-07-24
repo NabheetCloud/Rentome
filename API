@@ -1,0 +1,25 @@
+API 
+get Login
+	Email
+	Password
+POST
+Registeration
+	userid
+	Name
+	Email
+	Password
+	Genome Options
+POST/GET Property
+	propertyid
+	ownerid
+	Description
+	Location
+	Rent
+
+POST/GET
+Properties applied for
+	propertyid
+	userid
+	status Rent Out /Reject/Open
+
+

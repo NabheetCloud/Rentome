@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar color="primary">
+ 
+    <ion-title>Rentome - Login</ion-title>
+       
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <div class="logo" style="text-align: center">
+        <img src="assets/imgs/logo.png" alt="Ionic logo" >
+      </div>
+  <ion-list>
+    <ion-item>
+        
+      <ion-input [(ngModel)]="login.email" name="email" type="text" #email="ngModel" spellcheck="false" 
+      autocapitalize="off"
+        required  placeholder="Enter Email">
+      </ion-input>
+    </ion-item>
+    <ion-item>        
+      <ion-input [(ngModel)]="login.password" 
+                    name="password" 
+                    type="password" 
+                    #password="ngModel" 
+                    placeholder="Password"
+                    required>
+      </ion-input>
+    </ion-item>
+
+  </ion-list>
+  <ion-row responsive-sm>
+      <ion-col>
+          <button ion-button (click)="onLogin()" type="submit" bar color="primary">Login</button>
+          <button ion-button (click)="onSignup()" type="submit" bar color="primary">Register</button>
+        </ion-col>
+        </ion-row>
+
+</ion-content>

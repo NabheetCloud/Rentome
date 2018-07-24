@@ -1,0 +1,41 @@
+<!--
+  Generated template for the ApplyPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar  color="primary">
+    <ion-title>Rent Out</ion-title>
+  
+        <div class="logo" style="text-align: right">
+        <img src="assets/imgs/logo.png" alt="Ionic logo" style="max-height:5%;    max-width: 20%">
+      </div>
+  </ion-navbar>
+ 
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+        <ion-item class="item item-text-wrap"  >
+       
+            <b style="color:#427feb">{{property.description}}</b>
+           
+             <div style="
+          font-weight: bold" class="item-note" item-end> {{property.location}}</div>
+            <br><br>
+             <p style="color: #1a4226;
+          font-weight: bold"> {{property.rent}}</p>
+       
+        
+        </ion-item>
+    </ion-list>
+    <ion-row responsive-sm>
+        <ion-col>
+          <button ion-button (click)="onApply()" type="submit" full color="primary">Apply for Renting</button>
+        </ion-col>
+      </ion-row>
+</ion-content>
