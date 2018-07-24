@@ -20,7 +20,7 @@ import { INTERNAL_BROWSER_PLATFORM_PROVIDERS } from '@angular/platform-browser/s
   templateUrl: 'apply.html',
 })
 export class ApplyPage {
-  property:AddProperty = {};
+  property:any = {};
   toast = this.toastCtrl.create({
     message: 'Applied for property successfully',
     duration: 3000,

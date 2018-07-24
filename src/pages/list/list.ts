@@ -11,7 +11,7 @@ import { LoadingController } from 'ionic-angular';
   templateUrl: 'list.html'
 })
 export class ListPage {
-  properties:AddProperty = [{}];
+  properties:any = [{}];
   loader = this.loading.create({
     content: 'Getting Relevant Properties',
   });

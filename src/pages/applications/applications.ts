@@ -20,8 +20,8 @@ import { ToastController } from 'ionic-angular';
   templateUrl: 'applications.html',
 })
 export class ApplicationsPage {
-  property:AddProperty = {};
-  users:RegisterOptions=[{}];
+  property:any = {};
+  users:any=[{}];
   userid: any;
   toast = this.toastCtrl.create({
     message: 'Decision taken successfully',
